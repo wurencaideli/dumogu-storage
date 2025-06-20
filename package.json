@@ -1,0 +1,42 @@
+{
+    "name": "dumogu-storage",
+    "version": "0.0.1",
+    "description": "A useful front-end storage tool.",
+    "author": "wuzhanggui",
+    "license": "MIT",
+    "type": "module",
+    "keywords": [
+        "localStorage",
+        "sessionStorage",
+        "uni",
+        "wx"
+    ],
+    "homepage": "https://github.com/wurencaideli/dumogu-storage",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wurencaideli/dumogu-storage"
+    },
+    "bugs": {
+        "url": "https://github.com/wurencaideli/dumogu-storage/issues"
+    },
+    "jspm": {
+        "main": "dist/dumogu-storage.cjs.js",
+        "registry": "jspm"
+    },
+    "main": "dist/dumogu-storage.cjs.js",
+    "module": "dist/dumogu-storage.esm.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "scripts": {
+        "build": "rollup -c"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^28.0.6",
+        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-terser": "^0.4.4",
+        "rollup": "^3.29.5"
+    }
+}
