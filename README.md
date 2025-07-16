@@ -11,23 +11,27 @@ npm install dumogu-storage
 #### How to use
 
 ```javascript
-import DumoguStorage form 'dumogu-storage';
-const dumoguStorage = new DumoguStorage('test',undefined,{modelName:'local'});
-console.log(dumoguStorage.value);  //undefined
-dumoguStorage.value = {a:1};  //The corresponding ones are saved in the cache
-console.log(dumoguStorage.value);  //{a:1}
+import DumoguStorage from 'dumogu-storage';
+const dumoguStorage = new DumoguStorage('test', undefined, {
+    modelName: 'local',
+    isRealTime: false, // Is it real-time?
+});
+console.log(dumoguStorage.value); //undefined
+dumoguStorage.value = { a: 1 }; //The corresponding ones are saved in the cache
+console.log(dumoguStorage.value); //{a:1}
 ```
 
 #### Preprocessing Data
 
 ```javascript
-import DumoguStorage form 'dumogu-storage';
-const dumoguStorage = new DumoguStorage('test',0,{
-    modelName:'local',
-    beforSet(newValue){
+// Set up write and read interception
+import DumoguStorage from 'dumogu-storage';
+const dumoguStorage = new DumoguStorage('test', 0, {
+    modelName: 'local',
+    beforSet(newValue) {
         return newValue + 1;
     },
-    beforGet(newValue){
+    beforGet(newValue) {
         return newValue - 1;
     },
 });
