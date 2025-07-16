@@ -1,5 +1,5 @@
 /*!
- * dumogu-storage v0.0.1
+ * dumogu-storage v0.0.2
  * Copyright 2025 wuzhanggui https://github.com/wurencaideli
  * Licensed under MIT
  */
