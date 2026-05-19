@@ -2,8 +2,6 @@
 
 A simple, lightweight front-end storage tool. Less than 3 KB after compression.
 
-📖 **文档 / Docs:** [English](docs/README.en.md) | [中文](docs/README.zh.md) | [한국어](docs/README.ko.md) | [日本語](docs/README.ja.md)
-
 ### Features
 
 - Supports multiple storage backends: `localStorage`, `sessionStorage`, uni-app, WeChat Mini Program
